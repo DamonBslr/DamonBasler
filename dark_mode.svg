@@ -1,47 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="500" viewBox="0 0 840 500" font-family="Consolas, Menlo, monospace" font-size="13px">
 <rect x="0.5" y="0.5" width="839" height="499" rx="10" fill="#0d1117" stroke="#30363d"/>
-<text x="25" y="40" fill="#8b949e" xml:space="preserve">                 ++==---</text>
-<text x="25" y="55" fill="#8b949e" xml:space="preserve">            +==---------:-:::</text>
-<text x="25" y="70" fill="#8b949e" xml:space="preserve">          +==------::::::..... .</text>
-<text x="25" y="85" fill="#8b949e" xml:space="preserve">        *===----:::::...::::..   :#</text>
-<text x="25" y="100" fill="#8b949e" xml:space="preserve">       +==-=========++++++++==:.  .#</text>
-<text x="25" y="115" fill="#8b949e" xml:space="preserve">      =--=+*#%%######******++++-:  +</text>
-<text x="25" y="130" fill="#8b949e" xml:space="preserve">      -=*#%%%%%%#####*******+++=-:.=</text>
-<text x="25" y="145" fill="#8b949e" xml:space="preserve">      =*%%@@@@%%%######******+++=-:-</text>
-<text x="25" y="160" fill="#8b949e" xml:space="preserve">      +#%%##*+++*###**+----===+++=--#</text>
-<text x="25" y="175" fill="#8b949e" xml:space="preserve">      +#%#+===::-+##*=::::::-==++=--=*</text>
-<text x="25" y="190" fill="#8b949e" xml:space="preserve">    %#*#%#*+*+-=+#%%*=---:---=++++==+=   #</text>
-<text x="25" y="205" fill="#8b949e" xml:space="preserve">    %#*#%%%%%###%%%%*+++++++***+++=-=+##**</text>
-<text x="25" y="220" fill="#8b949e" xml:space="preserve">    @#+#%%%%%%%%%%%#*++++***+++++++==*###</text>
-<text x="25" y="235" fill="#8b949e" xml:space="preserve">     %###%%%%#####++=-=+++**+++++++++</text>
-<text x="25" y="250" fill="#8b949e" xml:space="preserve">      %%########%%#+++++++**++==+++*</text>
-<text x="25" y="265" fill="#8b949e" xml:space="preserve">        ##*###**#**++====++*++++++</text>
-<text x="25" y="280" fill="#8b949e" xml:space="preserve">         *##%#**##*++++++++*+++==*</text>
-<text x="25" y="295" fill="#8b949e" xml:space="preserve">          *###%%%##******+++++===+</text>
-<text x="25" y="310" fill="#8b949e" xml:space="preserve">           **##%%%#*****++====-==</text>
-<text x="25" y="325" fill="#8b949e" xml:space="preserve">         #+#*+++++=====------==++.</text>
-<text x="25" y="340" fill="#8b949e" xml:space="preserve">         ..%##*+=------:---===++=-.</text>
-<text x="25" y="355" fill="#8b949e" xml:space="preserve">     #+   :%%%%#*+=----====+++++=-.</text>
-<text x="25" y="370" fill="#8b949e" xml:space="preserve"> *+    .  :#%%###*++====++++*+++=-</text>
-<text x="25" y="385" fill="#8b949e" xml:space="preserve">       .  :+######****++*****+++=</text>
-<text x="25" y="400" fill="#8b949e" xml:space="preserve">          :+**#####************=</text>
-<text x="25" y="415" fill="#8b949e" xml:space="preserve">           :+***####***##****+:</text>
-<text x="25" y="430" fill="#8b949e" xml:space="preserve">             -+*##########+==.</text>
-<text x="25" y="445" fill="#8b949e" xml:space="preserve">               .=*#####*=.</text>
-<text x="390" y="45" xml:space="preserve"><tspan fill="#58a6ff">dietrichgebert@github </tspan><tspan fill="#484f58">──────────────────────────────────</tspan></text>
-<text x="390" y="87" xml:space="preserve"><tspan fill="#ffa657">OS: </tspan><tspan fill="#484f58">..................................... </tspan><tspan fill="#c9d1d9">Windows, macOS</tspan></text>
-<text x="390" y="108" xml:space="preserve"><tspan fill="#ffa657">Uptime: </tspan><tspan fill="#484f58">..................... </tspan><tspan fill="#c9d1d9">37 years, 7 months, 3 days</tspan></text>
-<text x="390" y="129" xml:space="preserve"><tspan fill="#ffa657">Host: </tspan><tspan fill="#484f58">.......................................... </tspan><tspan fill="#c9d1d9">Trimble</tspan></text>
-<text x="390" y="150" xml:space="preserve"><tspan fill="#ffa657">Kernel: </tspan><tspan fill="#484f58">............................ </tspan><tspan fill="#c9d1d9">Lead GenAI Engineer</tspan></text>
-<text x="390" y="171" xml:space="preserve"><tspan fill="#ffa657">IDE: </tspan><tspan fill="#484f58">...................... </tspan><tspan fill="#c9d1d9">Claude Code, Cursor, VS Code</tspan></text>
-<text x="390" y="213" xml:space="preserve"><tspan fill="#ffa657">Languages.Programming: </tspan><tspan fill="#484f58">.... </tspan><tspan fill="#c9d1d9">Python, Java, C#, TypeScript</tspan></text>
-<text x="390" y="234" xml:space="preserve"><tspan fill="#ffa657">Languages.Real: </tspan><tspan fill="#484f58">............... </tspan><tspan fill="#c9d1d9">German, English, Russian</tspan></text>
-<text x="390" y="255" xml:space="preserve"><tspan fill="#ffa657">Hobbies: </tspan><tspan fill="#484f58">....................................... </tspan><tspan fill="#c9d1d9">Fishing</tspan></text>
-<text x="390" y="297" xml:space="preserve"><tspan fill="#58a6ff">─ Contact </tspan><tspan fill="#484f58">──────────────────────────────────────────────</tspan></text>
-<text x="390" y="318" xml:space="preserve"><tspan fill="#ffa657">Email: </tspan><tspan fill="#484f58">........................ </tspan><tspan fill="#c9d1d9">dietrichgebert@gmail.com</tspan></text>
-<text x="390" y="339" xml:space="preserve"><tspan fill="#ffa657">LinkedIn: </tspan><tspan fill="#484f58">.................. </tspan><tspan fill="#c9d1d9">in/dietrich-gebert-b3a314a9</tspan></text>
-<text x="390" y="381" xml:space="preserve"><tspan fill="#58a6ff">─ GitHub Stats </tspan><tspan fill="#484f58">─────────────────────────────────────────</tspan></text>
-<text x="390" y="402" xml:space="preserve"><tspan fill="#ffa657">Repos: </tspan><tspan fill="#484f58">.... </tspan><tspan fill="#c9d1d9">8 {Contributed: 1}</tspan><tspan fill="#484f58"> | </tspan><tspan fill="#ffa657">Stars: </tspan><tspan fill="#484f58">........ </tspan><tspan fill="#c9d1d9">104,852</tspan></text>
-<text x="390" y="423" xml:space="preserve"><tspan fill="#ffa657">Commits: </tspan><tspan fill="#484f58">............... </tspan><tspan fill="#c9d1d9">1,442</tspan><tspan fill="#484f58"> | </tspan><tspan fill="#ffa657">Followers: </tspan><tspan fill="#484f58">...... </tspan><tspan fill="#c9d1d9">1,513</tspan></text>
-<text x="390" y="444" xml:space="preserve"><tspan fill="#ffa657">Lines of Code: </tspan><tspan fill="#c9d1d9">248,779</tspan><tspan fill="#484f58"> ( </tspan><tspan fill="#3fb950">280,051++</tspan><tspan fill="#484f58">, </tspan><tspan fill="#f85149">31,272--</tspan><tspan fill="#484f58"> )</tspan></text>
+<rect x="12.5" y="18.5" width="351.0" height="427.0" rx="8" fill="#eef1f4" stroke="#30363d"/>
+<text x="34.4" y="72.3" font-size="8.0px" fill="#1f2328" xml:space="preserve">               .:=+#@*-::...  . ::.::.. .:-*#*-..:::.</text>
+<text x="34.4" y="80.9" font-size="8.0px" fill="#1f2328" xml:space="preserve">             .-+#%@*:.:-=-.:..:::+-......:..:+%%+-=-=-.</text>
+<text x="34.4" y="89.5" font-size="8.0px" fill="#1f2328" xml:space="preserve">            :+#@%*=:-+++++.::....=#+==-: --==.-%@%#+===:</text>
+<text x="34.4" y="98.1" font-size="8.0px" fill="#1f2328" xml:space="preserve">           -*@@#++=+++**=*-:==--::#%%###==++##++#@@%*===-</text>
+<text x="34.4" y="106.7" font-size="8.0px" fill="#1f2328" xml:space="preserve">         .-*@%*+****==+#++#=+##*#*#%%%%%%#*+#@%#*#@@@*-==-.</text>
+<text x="34.4" y="115.3" font-size="8.0px" fill="#1f2328" xml:space="preserve">         -#@#+=*###+-++##*%%*%%%%%%%@@@@@@%*+%@@%**%@@+-==-</text>
+<text x="34.4" y="123.9" font-size="8.0px" fill="#1f2328" xml:space="preserve">        -#@#=-=#%#%++##%%%%@%#@%@@%%@@@@@@@#+=%@@#++%@@+-==-</text>
+<text x="34.4" y="132.5" font-size="8.0px" fill="#1f2328" xml:space="preserve">       :#@#=-=*@*#@*+%%%%@%%@%#@@@@%@@@@@@@%#++@@@#**%@@+-==-</text>
+<text x="34.4" y="141.1" font-size="8.0px" fill="#1f2328" xml:space="preserve">      .*@@+==*@%+%@#*@%%%@%%%@%%@@@%%@@@@@@@%*=#@@%###@@%===+:</text>
+<text x="34.4" y="149.7" font-size="8.0px" fill="#1f2328" xml:space="preserve">      -%@#==*%@**@@%#@@%%@%@@@@%%@@@%@@@@@@@@#*+@@@%%%@@@#+=**.</text>
+<text x="34.4" y="158.3" font-size="8.0px" fill="#1f2328" xml:space="preserve">      *@@*+*%@@#%@@@#@@%%@@%@@@@%@@@%@@@@@@@@@#+*@@@%%%@#*#+*@#.</text>
+<text x="34.4" y="166.9" font-size="8.0px" fill="#1f2328" xml:space="preserve">     -@@%**#%@@#@@@%#%@@%@@@@@@@@@@@%%#%@%%@@@@%*%@@@@%#*+%*+#%*</text>
+<text x="34.4" y="175.5" font-size="8.0px" fill="#1f2328" xml:space="preserve">    .%@%%**%@@@%@@@*=%@@%%@@@@@@@@@@@%++#%%%%%@@%*@%%%%##+%#=-</text>
+<text x="34.4" y="184.1" font-size="8.0px" fill="#1f2328" xml:space="preserve">    .-=##*#%@@%%@@%=-=%@@%%%@@@@@@@@@%===+*#%##%@##@%%%%#*%%==.</text>
+<text x="34.4" y="192.7" font-size="8.0px" fill="#1f2328" xml:space="preserve">      :+#*#%%%%%%@*-::=%@@%##%%@@@@@@%=-=--+%@%%#%#%@##%#*%#==</text>
+<text x="34.4" y="201.3" font-size="8.0px" fill="#1f2328" xml:space="preserve">      :+#*#%#%@%%@+-::.-#@@%###%@@@%%#--=*%#*++#%##*#@###*%#=-</text>
+<text x="34.4" y="209.9" font-size="8.0px" fill="#1f2328" xml:space="preserve">       -*+*##%@#%%***+=--+%@%*##%%%##*+##*=--====+++-*@#**%*+-</text>
+<text x="34.4" y="218.5" font-size="8.0px" fill="#1f2328" xml:space="preserve">       :+++##@*-%*:--+****+*%+=+#%%#==*=--+#%@@%#*=::-#%*#%++:</text>
+<text x="34.4" y="227.1" font-size="8.0px" fill="#1f2328" xml:space="preserve">        -*+*%@=.--=++++=---:-=--==**--::+%@@@**@@@@#-::*%%#+=</text>
+<text x="34.4" y="235.7" font-size="8.0px" fill="#1f2328" xml:space="preserve">        .=#+%%:.=#%@@%*##=.:::--------:+#%@@=::-@@+%+..*@@=.</text>
+<text x="34.4" y="244.3" font-size="8.0px" fill="#1f2328" xml:space="preserve">         .+##*.=%+*@@:.:#@=::::--------=-%@@-.:-%@==-..*@*--.</text>
+<text x="34.4" y="252.9" font-size="8.0px" fill="#1f2328" xml:space="preserve">           =%#.+*.*@%:  +@+::::---------:+##%**%*#-....%%:-=:</text>
+<text x="34.4" y="261.5" font-size="8.0px" fill="#1f2328" xml:space="preserve">           .+@-.= -#*#-=##+:::::--------::+=*#**=-::...=::--:</text>
+<text x="34.4" y="270.1" font-size="8.0px" fill="#1f2328" xml:space="preserve">           .-*%... =-+**+==::::::::::::::::+***+=::.....::::.</text>
+<text x="34.4" y="278.7" font-size="8.0px" fill="#1f2328" xml:space="preserve">           .-:=:.:..-++++=..:::.....::::....:--:::........:.</text>
+<text x="34.4" y="287.3" font-size="8.0px" fill="#1f2328" xml:space="preserve">            ::....::::--:............:::.......:::... :::..</text>
+<text x="34.4" y="295.9" font-size="8.0px" fill="#1f2328" xml:space="preserve">             .....::......::.....::::::::::::::::::....</text>
+<text x="34.4" y="304.5" font-size="8.0px" fill="#1f2328" xml:space="preserve">               ....:::::.:::....::::::::-==:::::::..</text>
+<text x="34.4" y="313.1" font-size="8.0px" fill="#1f2328" xml:space="preserve">                  ..::::::::::::::------::-::::::..</text>
+<text x="34.4" y="321.7" font-size="8.0px" fill="#1f2328" xml:space="preserve">                    ....::::::::----::::::::::::..</text>
+<text x="34.4" y="330.3" font-size="8.0px" fill="#1f2328" xml:space="preserve">                     ......:::::::::::::::::::..</text>
+<text x="34.4" y="338.9" font-size="8.0px" fill="#1f2328" xml:space="preserve">                       ..:::::::::::::::::::.</text>
+<text x="34.4" y="347.5" font-size="8.0px" fill="#1f2328" xml:space="preserve">                           ...:::::::::---:.</text>
+<text x="34.4" y="356.1" font-size="8.0px" fill="#1f2328" xml:space="preserve">                                :---=====-::</text>
+<text x="34.4" y="364.7" font-size="8.0px" fill="#1f2328" xml:space="preserve">                            .-=.:--======-:..-=:</text>
+<text x="34.4" y="373.3" font-size="8.0px" fill="#1f2328" xml:space="preserve">                      .:-=+#%@+::--========+*%@@%*=:..</text>
+<text x="34.4" y="381.9" font-size="8.0px" fill="#1f2328" xml:space="preserve">                  :+*%@@@@@@@@#+==++***#%%@@@@@@@@@@@%#+=-.</text>
+<text x="34.4" y="390.5" font-size="8.0px" fill="#1f2328" xml:space="preserve">                =%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#+:</text>
+<text x="34.4" y="399.1" font-size="8.0px" fill="#1f2328" xml:space="preserve">              .*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*.</text>
+<text x="390" y="45" xml:space="preserve"><tspan fill="#58a6ff">damonbslr@github </tspan><tspan fill="#484f58">───────────────────────────────────────</tspan></text>
+<text x="390" y="87" xml:space="preserve"><tspan fill="#ffa657">Uptime: </tspan><tspan fill="#484f58">................... </tspan><tspan fill="#c9d1d9">26 years, 11 months, 11 days</tspan></text>
+<text x="390" y="108" xml:space="preserve"><tspan fill="#ffa657">Host: </tspan><tspan fill="#484f58">......... </tspan><tspan fill="#c9d1d9">brandpfeil GmbH / Seba Zachau Basler GbR</tspan></text>
+<text x="390" y="129" xml:space="preserve"><tspan fill="#ffa657">Kernel: </tspan><tspan fill="#484f58">................ </tspan><tspan fill="#c9d1d9">Web &amp; AI Developer / Co-Founder</tspan></text>
+<text x="390" y="150" xml:space="preserve"><tspan fill="#ffa657">IDE: </tspan><tspan fill="#484f58">........................ </tspan><tspan fill="#c9d1d9">Cursor, Claude Code, Codex</tspan></text>
+<text x="390" y="192" xml:space="preserve"><tspan fill="#ffa657">Languages.Programming: </tspan><tspan fill="#484f58">................. </tspan><tspan fill="#c9d1d9">TypeScript, PHP</tspan></text>
+<text x="390" y="213" xml:space="preserve"><tspan fill="#ffa657">Languages.Real: </tspan><tspan fill="#484f58">........................ </tspan><tspan fill="#c9d1d9">German, English</tspan></text>
+<text x="390" y="255" xml:space="preserve"><tspan fill="#58a6ff">─ Contact </tspan><tspan fill="#484f58">──────────────────────────────────────────────</tspan></text>
+<text x="390" y="276" xml:space="preserve"><tspan fill="#ffa657">Email: </tspan><tspan fill="#484f58">............................ </tspan><tspan fill="#c9d1d9">damon@damonbasler.de</tspan></text>
+<text x="390" y="297" xml:space="preserve"><tspan fill="#ffa657">LinkedIn: </tspan><tspan fill="#484f58">.................... </tspan><tspan fill="#c9d1d9">in/damon-basler-1a75aa186</tspan></text>
+<text x="390" y="339" xml:space="preserve"><tspan fill="#58a6ff">─ GitHub Stats </tspan><tspan fill="#484f58">─────────────────────────────────────────</tspan></text>
+<text x="390" y="360" xml:space="preserve"><tspan fill="#ffa657">Repos: </tspan><tspan fill="#484f58">.... </tspan><tspan fill="#c9d1d9">0 {Contributed: 0}</tspan><tspan fill="#484f58"> | </tspan><tspan fill="#ffa657">Stars: </tspan><tspan fill="#484f58">.............. </tspan><tspan fill="#c9d1d9">0</tspan></text>
+<text x="390" y="381" xml:space="preserve"><tspan fill="#ffa657">Commits: </tspan><tspan fill="#484f58">................... </tspan><tspan fill="#c9d1d9">0</tspan><tspan fill="#484f58"> | </tspan><tspan fill="#ffa657">Followers: </tspan><tspan fill="#484f58">.......... </tspan><tspan fill="#c9d1d9">0</tspan></text>
+<text x="390" y="402" xml:space="preserve"><tspan fill="#ffa657">Lines of Code: </tspan><tspan fill="#c9d1d9">0</tspan><tspan fill="#484f58"> ( </tspan><tspan fill="#3fb950">0++</tspan><tspan fill="#484f58">, </tspan><tspan fill="#f85149">0--</tspan><tspan fill="#484f58"> )</tspan></text>
 </svg>

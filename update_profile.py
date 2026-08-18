@@ -9,40 +9,54 @@ import os
 import urllib.request
 from datetime import date, datetime, timezone
 
-USER = "DietrichGebert"
-BIRTHDAY = date(1989, 1, 15)
-JOINED_YEAR = 2023  # account creation year, never changes
+USER = "DamonBslr"
+BIRTHDAY = date(1999, 9, 7)
 W = 56  # info column width in characters
 
+PANEL = (12.5, 18.5, 351.0, 427.0)  # x, y, w, h of the portrait panel
+ART_FS, ART_STEP = 8.0, 8.6         # art font size and line step, in px
+ADVANCE = 0.6                       # monospace glyph advance, in em
+
 ART = r"""
-                 ++==---
-            +==---------:-:::
-          +==------::::::..... .
-        *===----:::::...::::..   :#
-       +==-=========++++++++==:.  .#
-      =--=+*#%%######******++++-:  +
-      -=*#%%%%%%#####*******+++=-:.=
-      =*%%@@@@%%%######******+++=-:-
-      +#%%##*+++*###**+----===+++=--#
-      +#%#+===::-+##*=::::::-==++=--=*
-    %#*#%#*+*+-=+#%%*=---:---=++++==+=   #
-    %#*#%%%%%###%%%%*+++++++***+++=-=+##**
-    @#+#%%%%%%%%%%%#*++++***+++++++==*###
-     %###%%%%#####++=-=+++**+++++++++
-      %%########%%#+++++++**++==+++*
-        ##*###**#**++====++*++++++
-         *##%#**##*++++++++*+++==*
-          *###%%%##******+++++===+
-           **##%%%#*****++====-==
-         #+#*+++++=====------==++.
-         ..%##*+=------:---===++=-.
-     #+   :%%%%#*+=----====+++++=-.
- *+    .  :#%%###*++====++++*+++=-
-       .  :+######****++*****+++=
-          :+**#####************=
-           :+***####***##****+:
-             -+*##########+==.
-               .=*#####*=.
+               .:=+#@*-::...  . ::.::.. .:-*#*-..:::.
+             .-+#%@*:.:-=-.:..:::+-......:..:+%%+-=-=-.
+            :+#@%*=:-+++++.::....=#+==-: --==.-%@%#+===:
+           -*@@#++=+++**=*-:==--::#%%###==++##++#@@%*===-
+         .-*@%*+****==+#++#=+##*#*#%%%%%%#*+#@%#*#@@@*-==-.
+         -#@#+=*###+-++##*%%*%%%%%%%@@@@@@%*+%@@%**%@@+-==-
+        -#@#=-=#%#%++##%%%%@%#@%@@%%@@@@@@@#+=%@@#++%@@+-==-
+       :#@#=-=*@*#@*+%%%%@%%@%#@@@@%@@@@@@@%#++@@@#**%@@+-==-
+      .*@@+==*@%+%@#*@%%%@%%%@%%@@@%%@@@@@@@%*=#@@%###@@%===+:
+      -%@#==*%@**@@%#@@%%@%@@@@%%@@@%@@@@@@@@#*+@@@%%%@@@#+=**.
+      *@@*+*%@@#%@@@#@@%%@@%@@@@%@@@%@@@@@@@@@#+*@@@%%%@#*#+*@#.
+     -@@%**#%@@#@@@%#%@@%@@@@@@@@@@@%%#%@%%@@@@%*%@@@@%#*+%*+#%*
+    .%@%%**%@@@%@@@*=%@@%%@@@@@@@@@@@%++#%%%%%@@%*@%%%%##+%#=-
+    .-=##*#%@@%%@@%=-=%@@%%%@@@@@@@@@%===+*#%##%@##@%%%%#*%%==.
+      :+#*#%%%%%%@*-::=%@@%##%%@@@@@@%=-=--+%@%%#%#%@##%#*%#==
+      :+#*#%#%@%%@+-::.-#@@%###%@@@%%#--=*%#*++#%##*#@###*%#=-
+       -*+*##%@#%%***+=--+%@%*##%%%##*+##*=--====+++-*@#**%*+-
+       :+++##@*-%*:--+****+*%+=+#%%#==*=--+#%@@%#*=::-#%*#%++:
+        -*+*%@=.--=++++=---:-=--==**--::+%@@@**@@@@#-::*%%#+=
+        .=#+%%:.=#%@@%*##=.:::--------:+#%@@=::-@@+%+..*@@=.
+         .+##*.=%+*@@:.:#@=::::--------=-%@@-.:-%@==-..*@*--.
+           =%#.+*.*@%:  +@+::::---------:+##%**%*#-....%%:-=:
+           .+@-.= -#*#-=##+:::::--------::+=*#**=-::...=::--:
+           .-*%... =-+**+==::::::::::::::::+***+=::.....::::.
+           .-:=:.:..-++++=..:::.....::::....:--:::........:.
+            ::....::::--:............:::.......:::... :::..
+             .....::......::.....::::::::::::::::::....
+               ....:::::.:::....::::::::-==:::::::..
+                  ..::::::::::::::------::-::::::..
+                    ....::::::::----::::::::::::..
+                     ......:::::::::::::::::::..
+                       ..:::::::::::::::::::.
+                           ...:::::::::---:.
+                                :---=====-::
+                            .-=.:--======-:..-=:
+                      .:-=+#%@+::--========+*%@@%*=:..
+                  :+*%@@@@@@@@#+==++***#%%@@@@@@@@@@@%#+=-.
+                =%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#+:
+              .*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*.
 """
 
 # two tokens by design: the Actions GITHUB_TOKEN yields the contribution-style
@@ -81,20 +95,11 @@ def age(b, t):
 
 
 def fetch_stats():
-    yr_aliases = "\n".join(
-        f'y{y}: contributionsCollection(from: "{y}-01-01T00:00:00Z", to: "{y + 1}-01-01T00:00:00Z")'
-        " { totalCommitContributions restrictedContributionsCount }"
-        for y in range(JOINED_YEAR, datetime.now(timezone.utc).year + 1)
-    )
-    contrib = graphql(f'query {{ user(login: "{USER}") {{ {yr_aliases} }} }}')["user"]
-    commits = sum(
-        v["totalCommitContributions"] + v["restrictedContributionsCount"]
-        for v in contrib.values()
-    )
     u = graphql(f"""
     query {{
       user(login: "{USER}") {{
         id
+        createdAt
         followers {{ totalCount }}
         repositories(first: 100, ownerAffiliations: OWNER) {{
           totalCount
@@ -105,6 +110,18 @@ def fetch_stats():
         }}
       }}
     }}""", token=PRIV_TOKEN)["user"]
+    # contributionsCollection caps at one year per call, so ask year by year
+    # starting from the account's own creation date
+    yr_aliases = "\n".join(
+        f'y{y}: contributionsCollection(from: "{y}-01-01T00:00:00Z", to: "{y + 1}-01-01T00:00:00Z")'
+        " { totalCommitContributions restrictedContributionsCount }"
+        for y in range(int(u["createdAt"][:4]), datetime.now(timezone.utc).year + 1)
+    )
+    contrib = graphql(f'query {{ user(login: "{USER}") {{ {yr_aliases} }} }}')["user"]
+    commits = sum(
+        v["totalCommitContributions"] + v["restrictedContributionsCount"]
+        for v in contrib.values()
+    )
     stats = {
         "followers": u["followers"]["totalCount"],
         "repos": u["repositories"]["totalCount"],
@@ -152,9 +169,11 @@ def loc(repo_names, user_id):
 
 
 PALETTES = {
-    "dark": {"bg": "#0d1117", "border": "#30363d", "art": "#8b949e", "h": "#58a6ff",
+    "dark": {"bg": "#0d1117", "border": "#30363d", "art": "#1f2328", "h": "#58a6ff",
+             "panel": "#eef1f4", "panel_border": "#30363d",
              "k": "#ffa657", "v": "#c9d1d9", "d": "#484f58", "g": "#3fb950", "r": "#f85149"},
-    "light": {"bg": "#ffffff", "border": "#d0d7de", "art": "#57606a", "h": "#0969da",
+    "light": {"bg": "#ffffff", "border": "#d0d7de", "art": "#1f2328", "h": "#0969da",
+              "panel": "#eef1f4", "panel_border": "#d0d7de",
               "k": "#953800", "v": "#24292f", "d": "#afb8c1", "g": "#1a7f37", "r": "#cf222e"},
 }
 
@@ -180,19 +199,17 @@ def info_lines(s):
     return [
         [(f"{USER.lower()}@github ", "h"), ("─" * (W - len(USER) - 8), "d")],
         [],
-        kv("OS", "Windows, macOS"),
         kv("Uptime", f"{y} years, {m} months, {d} days"),
-        kv("Host", "Trimble"),
-        kv("Kernel", "Lead GenAI Engineer"),
-        kv("IDE", "Claude Code, Cursor, VS Code"),
+        kv("Host", "brandpfeil GmbH / Seba Zachau Basler GbR"),
+        kv("Kernel", "Web & AI Developer / Co-Founder"),
+        kv("IDE", "Cursor, Claude Code, Codex"),
         [],
-        kv("Languages.Programming", "Python, Java, C#, TypeScript"),
-        kv("Languages.Real", "German, English, Russian"),
-        kv("Hobbies", "Fishing"),
+        kv("Languages.Programming", "TypeScript, PHP"),
+        kv("Languages.Real", "German, English"),
         [],
         rule("Contact"),
-        kv("Email", "dietrichgebert@gmail.com"),
-        kv("LinkedIn", "in/dietrich-gebert-b3a314a9"),
+        kv("Email", "damon@damonbasler.de"),
+        kv("LinkedIn", "in/damon-basler-1a75aa186"),
         [],
         rule("GitHub Stats"),
         kv2("Repos", f"{s['repos']} {{Contributed: {s['contributed']}}}", "Stars", n(s["stars"])),
@@ -204,13 +221,20 @@ def info_lines(s):
 
 def render(mode, stats):
     p = PALETTES[mode]
+    px, py, pw, ph = PANEL
     out = [
         '<svg xmlns="http://www.w3.org/2000/svg" width="840" height="500" viewBox="0 0 840 500" '
         f'font-family="Consolas, Menlo, monospace" font-size="13px">',
         f'<rect x="0.5" y="0.5" width="839" height="499" rx="10" fill="{p["bg"]}" stroke="{p["border"]}"/>',
+        f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="8" '
+        f'fill="{p["panel"]}" stroke="{p["panel_border"]}"/>',
     ]
-    for i, line in enumerate(ART.strip("\n").split("\n")):
-        out.append(f'<text x="25" y="{40 + i * 15}" fill="{p["art"]}" xml:space="preserve">{html.escape(line)}</text>')
+    art = ART.strip("\n").split("\n")
+    x0 = px + (pw - max(len(l) for l in art) * ART_FS * ADVANCE) / 2
+    y0 = py + (ph - len(art) * ART_STEP) / 2 + ART_FS
+    for i, line in enumerate(art):
+        out.append(f'<text x="{x0:.1f}" y="{y0 + i * ART_STEP:.1f}" font-size="{ART_FS}px" '
+                   f'fill="{p["art"]}" xml:space="preserve">{html.escape(line)}</text>')
     for i, segs in enumerate(info_lines(stats)):
         if not segs:
             continue
@@ -224,7 +248,7 @@ def selfcheck():
     assert age(date(1989, 1, 15), date(2026, 7, 10)) == (37, 5, 25)
     assert age(date(2000, 3, 31), date(2026, 4, 1)) == (26, 0, 1)
     assert age(date(2000, 1, 1), date(2026, 1, 1)) == (26, 0, 0)
-    assert len("".join(t for t, _ in kv("OS", "Windows, macOS"))) == W
+    assert len("".join(t for t, _ in kv("Host", "brandpfeil GmbH"))) == W
 
 
 if __name__ == "__main__":
