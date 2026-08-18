@@ -186,7 +186,7 @@ def info_lines(s):
         kv("Uptime", f"{y} years, {m} months, {d} days"),
         kv("Host", "brandpfeil GmbH / Seba Zachau Basler GbR"),
         kv("Kernel", "Web & AI Developer / Co-Founder"),
-        kv("IDE", "Claude Code"),
+        kv("IDE", "Cursor, Claude Code, Codex"),
         [],
         kv("Languages.Programming", "TypeScript, PHP"),
         kv("Languages.Real", "German, English"),
