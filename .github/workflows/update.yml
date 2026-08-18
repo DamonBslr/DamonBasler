@@ -4,8 +4,8 @@ on:
   schedule:
     # 15:25 Europe/Berlin. Cron here is always UTC -- GitHub has no timezone
     # option -- so this is CEST (UTC+2). It drifts to 14:25 local under CET in
-    # winter; change to "25 14 * * *" to follow the clock back.
-    - cron: "25 13 * * *"
+    # winter; change to "28 14 * * *" to follow the clock back.
+    - cron: "28 13 * * *"
   workflow_dispatch:
 
 permissions:
